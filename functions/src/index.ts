@@ -74,3 +74,18 @@ export const triggerpayment = onCall(
     };
   }
 );
+
+export const getpaymentstatus = onCall(
+  {cors: [/firebase\.com$/, "http://localhost:3000"]},
+  async (request) => {
+    const {senderId} = request.data.senderdetails;
+
+    const gettransactionsdetails = await firestore
+      .collection("transactions")
+      .doc(senderId)
+      .get();
+
+    const obtained_data = gettransactionsdetails.data();
+    return obtained_data;
+  }
+);
