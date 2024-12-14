@@ -1,6 +1,6 @@
 # BPI - (Basic Payment Interface)
 
-I developed this project in order to mimic and understand the behaviour of UPI system. Through out the project, I understood a how payments are generally processed in UPI with NPCI.
+I developed this project in order to mimic and understand the behavior of UPI system. Through out the project, I understood a how payments are generally processed in UPI with NPCI.
 
 This repository consists of code related to firebase functions which is hosted in cloud run by Google Cloud.
 
